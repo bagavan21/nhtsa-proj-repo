@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.2
 Name: crcmod
 Version: 1.7
 Summary: CRC Generator
@@ -30,6 +30,14 @@ Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Transla
 Classifier: Topic :: Scientific/Engineering :: Mathematics
 Classifier: Topic :: Utilities
 License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
 
 ===========================
 crcmod for Calculating CRCs

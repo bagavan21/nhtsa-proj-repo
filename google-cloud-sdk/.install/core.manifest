@@ -987,6 +987,8 @@ lib/googlecloudsdk/api_lib/scc/manage/sha/__init__.py
 lib/googlecloudsdk/api_lib/scc/manage/sha/clients.py
 lib/googlecloudsdk/api_lib/scc/postures/__init__.py
 lib/googlecloudsdk/api_lib/scc/postures/util.py
+lib/googlecloudsdk/api_lib/scc/remediation_intents/__init__.py
+lib/googlecloudsdk/api_lib/scc/remediation_intents/sps_api.py
 lib/googlecloudsdk/api_lib/scc/securitycenter_client.py
 lib/googlecloudsdk/api_lib/scc/slz_overwatch/__init__.py
 lib/googlecloudsdk/api_lib/scc/slz_overwatch/overwatch.py
@@ -2623,6 +2625,7 @@ lib/googlecloudsdk/command_lib/ml_engine/versions_util.py
 lib/googlecloudsdk/command_lib/model_armor/__init__.py
 lib/googlecloudsdk/command_lib/model_armor/args.py
 lib/googlecloudsdk/command_lib/model_armor/util.py
+lib/googlecloudsdk/command_lib/model_armor/v1_resources.yaml
 lib/googlecloudsdk/command_lib/model_armor/v1alpha_resources.yaml
 lib/googlecloudsdk/command_lib/monitoring/__init__.py
 lib/googlecloudsdk/command_lib/monitoring/completers.py
@@ -2867,6 +2870,10 @@ lib/googlecloudsdk/command_lib/run/printers/k8s_object_printer_util.py
 lib/googlecloudsdk/command_lib/run/printers/revision_printer.py
 lib/googlecloudsdk/command_lib/run/printers/service_printer.py
 lib/googlecloudsdk/command_lib/run/printers/traffic_printer.py
+lib/googlecloudsdk/command_lib/run/printers/v2/__init__.py
+lib/googlecloudsdk/command_lib/run/printers/v2/container_printer.py
+lib/googlecloudsdk/command_lib/run/printers/v2/printer_util.py
+lib/googlecloudsdk/command_lib/run/printers/v2/worker_pool_printer.py
 lib/googlecloudsdk/command_lib/run/printers/worker_printer.py
 lib/googlecloudsdk/command_lib/run/proxy.py
 lib/googlecloudsdk/command_lib/run/resource_args.py
@@ -2886,6 +2893,7 @@ lib/googlecloudsdk/command_lib/run/v2/config_changes.py
 lib/googlecloudsdk/command_lib/run/v2/deletion.py
 lib/googlecloudsdk/command_lib/run/v2/flags_parser.py
 lib/googlecloudsdk/command_lib/run/v2/instance_split.py
+lib/googlecloudsdk/command_lib/run/v2/volumes.py
 lib/googlecloudsdk/command_lib/run/v2/worker_pools_operations.py
 lib/googlecloudsdk/command_lib/run/volumes.py
 lib/googlecloudsdk/command_lib/runapps/__init__.py
@@ -2936,6 +2944,8 @@ lib/googlecloudsdk/command_lib/scc/notifications/flags.py
 lib/googlecloudsdk/command_lib/scc/notifications/flags.yaml
 lib/googlecloudsdk/command_lib/scc/notifications/notification_util.py
 lib/googlecloudsdk/command_lib/scc/notifications/request_hooks.py
+lib/googlecloudsdk/command_lib/scc/remediation_intents/__init__.py
+lib/googlecloudsdk/command_lib/scc/remediation_intents/flags.py
 lib/googlecloudsdk/command_lib/scc/resources.yaml
 lib/googlecloudsdk/command_lib/scc/settings/__init__.py
 lib/googlecloudsdk/command_lib/scc/settings/exceptions.py
@@ -4516,6 +4526,10 @@ lib/googlecloudsdk/generated_clients/apis/ml/v1/ml_v1_client.py
 lib/googlecloudsdk/generated_clients/apis/ml/v1/ml_v1_messages.py
 lib/googlecloudsdk/generated_clients/apis/ml/v1/resources.py
 lib/googlecloudsdk/generated_clients/apis/modelarmor/__init__.py
+lib/googlecloudsdk/generated_clients/apis/modelarmor/v1/__init__.py
+lib/googlecloudsdk/generated_clients/apis/modelarmor/v1/modelarmor_v1_client.py
+lib/googlecloudsdk/generated_clients/apis/modelarmor/v1/modelarmor_v1_messages.py
+lib/googlecloudsdk/generated_clients/apis/modelarmor/v1/resources.py
 lib/googlecloudsdk/generated_clients/apis/modelarmor/v1alpha/__init__.py
 lib/googlecloudsdk/generated_clients/apis/modelarmor/v1alpha/modelarmor_v1alpha_client.py
 lib/googlecloudsdk/generated_clients/apis/modelarmor/v1alpha/modelarmor_v1alpha_messages.py
@@ -4958,6 +4972,10 @@ lib/googlecloudsdk/generated_clients/apis/serviceusage/v2alpha/__init__.py
 lib/googlecloudsdk/generated_clients/apis/serviceusage/v2alpha/resources.py
 lib/googlecloudsdk/generated_clients/apis/serviceusage/v2alpha/serviceusage_v2alpha_client.py
 lib/googlecloudsdk/generated_clients/apis/serviceusage/v2alpha/serviceusage_v2alpha_messages.py
+lib/googlecloudsdk/generated_clients/apis/serviceusage/v2beta/__init__.py
+lib/googlecloudsdk/generated_clients/apis/serviceusage/v2beta/resources.py
+lib/googlecloudsdk/generated_clients/apis/serviceusage/v2beta/serviceusage_v2beta_client.py
+lib/googlecloudsdk/generated_clients/apis/serviceusage/v2beta/serviceusage_v2beta_messages.py
 lib/googlecloudsdk/generated_clients/apis/source/__init__.py
 lib/googlecloudsdk/generated_clients/apis/source/v1/__init__.py
 lib/googlecloudsdk/generated_clients/apis/source/v1/resources.py
@@ -5624,6 +5642,8 @@ lib/googlecloudsdk/schemas/compute/beta/BackendServiceLocalityLoadBalancingPolic
 lib/googlecloudsdk/schemas/compute/beta/BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy.yaml
 lib/googlecloudsdk/schemas/compute/beta/BackendServiceLocalityLoadBalancingPolicyConfigPolicy.yaml
 lib/googlecloudsdk/schemas/compute/beta/BackendServiceLogConfig.yaml
+lib/googlecloudsdk/schemas/compute/beta/BackendServiceTlsSettings.yaml
+lib/googlecloudsdk/schemas/compute/beta/BackendServiceTlsSettingsSubjectAltName.yaml
 lib/googlecloudsdk/schemas/compute/beta/BackendServiceUsedBy.yaml
 lib/googlecloudsdk/schemas/compute/beta/CacheKeyPolicy.yaml
 lib/googlecloudsdk/schemas/compute/beta/CallCredentials.yaml
@@ -5740,6 +5760,8 @@ lib/googlecloudsdk/schemas/compute/v1/BackendServiceLocalityLoadBalancingPolicyC
 lib/googlecloudsdk/schemas/compute/v1/BackendServiceLocalityLoadBalancingPolicyConfigCustomPolicy.yaml
 lib/googlecloudsdk/schemas/compute/v1/BackendServiceLocalityLoadBalancingPolicyConfigPolicy.yaml
 lib/googlecloudsdk/schemas/compute/v1/BackendServiceLogConfig.yaml
+lib/googlecloudsdk/schemas/compute/v1/BackendServiceTlsSettings.yaml
+lib/googlecloudsdk/schemas/compute/v1/BackendServiceTlsSettingsSubjectAltName.yaml
 lib/googlecloudsdk/schemas/compute/v1/BackendServiceUsedBy.yaml
 lib/googlecloudsdk/schemas/compute/v1/CacheKeyPolicy.yaml
 lib/googlecloudsdk/schemas/compute/v1/CircuitBreakers.yaml
@@ -6553,6 +6575,10 @@ lib/surface/ai/persistent_resources/delete.py
 lib/surface/ai/persistent_resources/describe.py
 lib/surface/ai/persistent_resources/list.py
 lib/surface/ai/persistent_resources/reboot.py
+lib/surface/ai/ray/__init__.py
+lib/surface/ai/ray/job/__init__.py
+lib/surface/ai/ray/job/describe.py
+lib/surface/ai/ray/job/submit.py
 lib/surface/ai/tensorboard_experiments/__init__.py
 lib/surface/ai/tensorboard_experiments/create.py
 lib/surface/ai/tensorboard_experiments/delete.py
@@ -7730,6 +7756,7 @@ lib/surface/compute/disks/convert.py
 lib/surface/compute/disks/create.py
 lib/surface/compute/disks/delete.py
 lib/surface/compute/disks/describe.py
+lib/surface/compute/disks/get_async_replication_status.py
 lib/surface/compute/disks/get_iam_policy.yaml
 lib/surface/compute/disks/list.py
 lib/surface/compute/disks/move.py
@@ -8378,6 +8405,7 @@ lib/surface/compute/routers/nats/update.py
 lib/surface/compute/routers/remove_bgp_peer.py
 lib/surface/compute/routers/remove_interface.py
 lib/surface/compute/routers/remove_named_set.py
+lib/surface/compute/routers/remove_named_set_element.py
 lib/surface/compute/routers/remove_route_policy.py
 lib/surface/compute/routers/remove_route_policy_term.py
 lib/surface/compute/routers/update.py
@@ -11621,12 +11649,19 @@ lib/surface/model_armor/floorsettings/update.py
 lib/surface/model_armor/templates/__init__.py
 lib/surface/model_armor/templates/_init_extensions.py
 lib/surface/model_armor/templates/_partials/_create_alpha.yaml
+lib/surface/model_armor/templates/_partials/_create_ga.yaml
 lib/surface/model_armor/templates/_partials/_delete_alpha.yaml
+lib/surface/model_armor/templates/_partials/_delete_ga.yaml
 lib/surface/model_armor/templates/_partials/_describe_alpha.yaml
+lib/surface/model_armor/templates/_partials/_describe_ga.yaml
 lib/surface/model_armor/templates/_partials/_list_alpha.yaml
+lib/surface/model_armor/templates/_partials/_list_ga.yaml
 lib/surface/model_armor/templates/_partials/_sanitize_model_response_alpha.yaml
+lib/surface/model_armor/templates/_partials/_sanitize_model_response_ga.yaml
 lib/surface/model_armor/templates/_partials/_sanitize_user_prompt_alpha.yaml
+lib/surface/model_armor/templates/_partials/_sanitize_user_prompt_ga.yaml
 lib/surface/model_armor/templates/_partials/_update_alpha.yaml
+lib/surface/model_armor/templates/_partials/_update_ga.yaml
 lib/surface/model_armor/templates/create.yaml
 lib/surface/model_armor/templates/delete.yaml
 lib/surface/model_armor/templates/describe.yaml
@@ -13245,6 +13280,12 @@ lib/surface/scc/postures/extract.yaml
 lib/surface/scc/postures/list.yaml
 lib/surface/scc/postures/list_revisions.yaml
 lib/surface/scc/postures/update.yaml
+lib/surface/scc/remediation_intents/__init__.py
+lib/surface/scc/remediation_intents/create.py
+lib/surface/scc/remediation_intents/delete.py
+lib/surface/scc/remediation_intents/describe.py
+lib/surface/scc/remediation_intents/list.py
+lib/surface/scc/remediation_intents/update.py
 lib/surface/scc/settings/__init__.py
 lib/surface/scc/settings/describe_explicit.py
 lib/surface/scc/settings/services/__init__.py
