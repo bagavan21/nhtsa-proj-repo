@@ -4,7 +4,7 @@
 is_raining = False
 print("***IF Condition***")
 if is_raining:
-    print(f"It's raining!💧, Bring an umbrella.")
+    print(f"It's raining!💧, Bring an umbrella ☂️.")
 #else:
 print(f"It's not raining!☀️")   #Without indentation if the line starts from 1st postion it 
 print("\n")                      #Python will consider it a new line completly in conditional statements.
@@ -13,7 +13,7 @@ print("\n")                      #Python will consider it a new line completly i
 is_raining = True
 print("***IF ELSE Condition***")
 if is_raining:
-    print(f"It's raining!💧, Bring an umbrella.")
+    print(f"It's raining!💧, Bring an umbrella ☂️.")
     print("\n")
 else:
     print(f"It's not raining!☀️")
@@ -21,14 +21,18 @@ else:
 
 
 # IF ELIF ELSE
-is_raining = True
+is_raining = False
 is_far = True
+distance_meters = 2000
 print("***IF ELIF ELSE Condition***")
 if is_raining:
-    print(f"It's raining!💧, Drive to the destination.")
+    print(f"It's raining!💧☂️, Bring an umbrella.")
     print("\n")
 elif is_far:
-    print(f"It's far!☀️ but not raining! we can cycle to the destination quickly 🚲.")
+    print(f"It's far! but not raining!, Drive to the destination 🚗.")
+    print("\n")
+elif distance_meters > 1000:
+    print(f"It's far! but not raining! we can cycle to the destination quickly 🚲.")
     print("\n")
 else:
     print(f"No raining!💧, No far!, We can walk to the destination 🚶🏻☀️")
