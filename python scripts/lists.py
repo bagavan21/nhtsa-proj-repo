@@ -105,3 +105,16 @@ lt.reverse() # ==> [5,4,3,2,1,0]
 lt_slice = lt[0:3] # ==> [5,4,3]
 print(lt_slice)
 print("\n")
+
+
+# list excersize  ==> top_3_expenses 92,160,250
+shopping_expenses = [24,60,8,92,160,80,250,20,10]
+shopping_expenses.sort()
+print(shopping_expenses)
+print("\n")
+shopping_expenses.reverse()
+print(shopping_expenses)
+print("\n")
+top_3_expenses = shopping_expenses[:3]
+print(top_3_expenses)
+print("\n")
