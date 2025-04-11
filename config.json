@@ -1,0 +1,14 @@
+{
+    "source_file": "source.csv",
+    "target_file": "destination.csv",
+    "invalid_file": "invalid.csv",
+    "validations": {
+        "CustID": {"required": true, "type": "int"},
+        "PrdID": {"required": true, "type": "str"},
+        "Location": {"required": true, "where": ["NY", "CA", "TX"]},
+        "SellerID": {"required": true, "type": "str"},
+        "Price": {"required": true, "type": "float", "min": 1, "max": 1000},
+        "PrdType": {"required": true, "where": ["Electronics", "Furniture", "Clothing"]},
+        "Datetime": {"required": true, "format": "%Y-%m-%d %H:%M:%S"}
+    }
+}
