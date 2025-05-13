@@ -40,7 +40,7 @@ def validate_value(column, value):
             return False
 
     # Allowed values
-    if "where" in rules and value not in rules["where"]:
+    if "filter" in rules and value not in rules["filter"]:
         return False
 
     # Numeric range validation
